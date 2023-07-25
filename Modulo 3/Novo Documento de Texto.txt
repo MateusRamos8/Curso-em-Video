@@ -3,5 +3,9 @@ Repositorio Local/Remoto -> Local onde guarda os arquivos
 Gerenciador de Versões -> Permite voltar em outras versões do arquivo.
 Git é local. Git Hub é local/remoto
 
+criar repositorio -> colocar o mesmo nome da pasta, e no filepath a pasta em que
+ele está.
+dar publish/push origin pra mandar pro Git Hub
+
 
 
