@@ -7,5 +7,10 @@ criar repositorio -> colocar o mesmo nome da pasta, e no filepath a pasta em que
 ele está.
 dar publish/push origin pra mandar pro Git Hub
 
+pra hospedar vai em settings no git hub, Pages(barra lateral), e ai la muda
+o que ta 'none'pra main branch, ou deploy by branch. Deixa o outro negocio
+no /root, e espera um pouco, e muda o arquivo pra index.html.
+
+
 
 
