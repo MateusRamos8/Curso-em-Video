@@ -1,0 +1,224 @@
+-C13 A0
+Introdução
+
+
+-C13 A1 Psicologia das Cores
+
+
+-C13 A2 Representando Cores Com CSS
+nome
+rgb
+rgba
+hsl
+hsla
+hexadecimal
+colorpicker
+
+
+-C13 A3 Harmonia de Cores
+cores primarias secundarias e terciarias
+temperatura de cor
+cores complementares oposto
+cores análogas do lado
+cores análogas relacionadas pular 1
+cores intercaladas pular de 1 em 1
+cores quadradas pular 2 em 2
+cores triadicas pular 3 em 3
+cores tetradicas pular 4 em 4 + oposto
+monocromia modificar a saturação e o brilho
+
+
+-C13 A4 Paleta de Cores
+adobe colors site
+paletton
+coolors
+extrair tema
+degrade
+sugestões
+
+
+-C13 A5 Como capturar cores da tela
+Colorzilla
+
+
+-C13 A6 Degrade em CSS
+background-image: linear-gradient(direção ou angulo, cores)
+
+background-image: linear-gradient
+(235deg, #3198E2, #6059C0, #B93590, #E33F5F, #FDD579 80%);
+
+
+-C13 A7 Exemplo Real
+box-shadow: dislocamento lateral, dis. pra baixo, espalhamento, cor;
+text-shadow: 1px 1px 0px #4d2e03b7;
+
+
+
+-C14 A1 Tipografia
+
+
+-C14 A2 Anatomia do Tipo
+estudos de fonte
+glifo=letra
+fonte=todos os glifos de uma familia
+familia tipografica/variação=variações na nos glifos da mesma fonte
+
+Serifada
+sans-serif(sem serifa)
+monoespaçada
+handwriting
+display(n se preocupa com regras)
+
+
+-C14 A3 Familias de fonte com CSS
+font-family: fonte1, fonte2, fonte3; para caso as primeiras n carreguem
+caso o nome da fonte tenha espaço colocar entre aspas simples ''
+
+Web Safe Fonts, Google fonts
+
+
+-C14 A4 Tamanho de Fonte
+font-size
+
+medidas absolutas: cm, mm, in(polegada), px, pt, pc
+
+medidas relativas: em(tamanho atual da fonte, M maiusculo), 
+ex(altura do x minus da Fonte); rem (em so q relativo a fonte do body),
+vw(viewport width), vh(viewport height), %.
+
+fonte-> px ou em.
+
+não pode ter espaço entre medida e numero-> 10px
+
+
+-C14 A5 Peso, estilo, e shorthand font
+font-weight: normal; lighter; normal; bold; bolder ou 100-900
+peso->grossura
+
+font-style: italic; italic ou normal.
+
+text-decoration: underline; underline, line-through, overline, blink;
+
+font: font-style, fofnt-weight, font-size, font-family;
+
+-C14 A6 Fontes Externas
+Google Fonts
+
+
+
+-C14 A7 fonte externas baixadas
+@font-face{
+            font-family: 'Love';
+            src: url('fonts/love larry.otf') format('opentype'),
+	    url('fonts/love larry.ttf') format('truetype');
+
+            font-weight: normal;
+            font-style: normal;
+            /*
+                Tipos de format()
+                -opentype (otf)
+                -truetype(ttf)
+                -embedded-opentype
+                -trutype-aat(apple advanced typography)
+                -svg
+            */
+        }
+
+
+-C14 A8 pegando fontes de um site
+fonts ninja
+
+
+-C14 A9 fonte em imagem
+What Font
+
+
+-C14 A10 Alinhamento de Textos com CSS
+text-align: ; center, left, right, justify
+text-indent: ; medida; define a distancia da origem do texto.
+
+-C15 A01  Usando o id com CSS
+Seletor de ID '#'
+Seletor de Classe '.'
+
+-C15 A02 Difference between id and Class
+um elemento tem um id único
+classes para estilizar vários ao mesmo tempo
+da pra usar mais de uma classe e id(no caso classe+ o id unico) ao mesmo tempo
+Id tem prioridade maxima!
+
+
+-C15 A03 Pseudo-Classes em CSS
+Pseudo-Classe é com ':'
+relacionadas ao estado do elemento
+Combinador > para elementos filhos
+
+-C15 A04 Pseudo-Elementos
+Pseudo Elemento é com '::'
+::after    ::before
+content
+
+-C16 A01 e A02 e A03 Box Model
+width
+height
+border
+padding
+margin
+content
+outline: fora do border e dentro da margin(ela não aumenta a margin, sobrepondo)
+inline e block
+outline: width style color
+
+-C16 A04 Grouping Tags
+header
+main
+nav
+article
+section
+aside
+footer
+
+-C16 A05 Shadow in Boxes omg 
+box-shadow: 1px 1px 10px 1px black
+/* (inset ou não) ;pra direita; pra baixo; blur ; espalhamento ; cor */
+
+-C16 A06 Caixas com vertices arredondados
+border-radius: 10px 10px 10px 10px;
+border-top-left-radius
+border-top-right-radius
+border-bottom-right-radius
+border-bottom-left-radius
+
+-C16 A07 Borda com imagem
+border-image-source: url('')
+border-image-slice: 27 (ir tentando)
+border-image-repeat: repeat(ou streach)
+não pode tirar a borda normal
+border-image
+
+
+
+-C17 Desafio
+mockflow
+window resizer
+
+-C17 A6 Variaveis CSS
+:root -> local onde se declara as variaveis.
+toda variavel é precedida por -- e separada por ;
+para usar uma variavel -> var(--nome)
+
+-C17 A7 Responsividade
+img width 100%
+<picture>
+<source media="(max-width: 600px)" srcset="imagem"
+<img>
+</picture>
+
+list-style-type: '\codigo'
+list-style-position: inside;
+columns: 2
+
+para emojis em forma de conteudo -> '\codigo'
+max-width e min-width
+
+centralizar iframe da trabalho, usa position e padding

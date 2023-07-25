@@ -1,0 +1,7 @@
+-C18 Git Hub
+Repositorio Local/Remoto -> Local onde guarda os arquivos
+Gerenciador de Versões -> Permite voltar em outras versões do arquivo.
+Git é local. Git Hub é local/remoto
+
+
+
