@@ -11,6 +11,14 @@ pra hospedar vai em settings no git hub, Pages(barra lateral), e ai la muda
 o que ta 'none'pra main branch, ou deploy by branch. Deixa o outro negocio
 no /root, e espera um pouco, e muda o arquivo pra index.html.
 
+-C19 Imagens de Fundo
+background-Image -> pode declarar linear-gradient; ou uma imagem com url('').
+
+background-repeat -> define como/se a imagem vai repetir. pode ser repeat(padrão); no-repeat; repeat-x; 
+repeat-y.
+
+background-size -> redimensiona a imagem. pode ser auto(tam original); lenght(px ou %); cover(deixa a imagem totalmente exibida na tela); contain(redimensiona a imagem para que ela cubra o conteiner).
+
 
 
 
