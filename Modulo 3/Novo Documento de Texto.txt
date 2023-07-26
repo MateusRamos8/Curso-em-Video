@@ -11,14 +11,26 @@ pra hospedar vai em settings no git hub, Pages(barra lateral), e ai la muda
 o que ta 'none'pra main branch, ou deploy by branch. Deixa o outro negocio
 no /root, e espera um pouco, e muda o arquivo pra index.html.
 
--C19 Imagens de Fundo
+
+-C19 Imagens de Fundo  e centralização vertical
 background-Image -> pode declarar linear-gradient; ou uma imagem com url('').
 
 background-repeat -> define como/se a imagem vai repetir. pode ser repeat(padrão); no-repeat; repeat-x; 
 repeat-y.
 
-background-size -> redimensiona a imagem. pode ser auto(tam original); lenght(px ou %); cover(deixa a imagem totalmente exibida na tela); contain(redimensiona a imagem para que ela cubra o conteiner).
+background-size -> redimensiona a imagem. pode ser auto(tam original); lenght(px ou %); cover(imagem ira cobrir toda a tela); contain(iamgem será 100% exibida).
 
+background-position -> posiciona o background, pode ser valor1 valor2, onde valor1= left, center ou right e 
+valor2=top, center, bottom;
 
+background-attachment ->configura o vinculo da imagem com o resto da página. pode ser scroll(padrão); ou
+fixed(não rola com o resto da página)
 
+shorthand -> background: color -> image -> position -> repeat -> [size] -> attachment
+(background-size não funciona na pratica na shorthand, mas na teoria sim)
 
+para centralizar na vertical:
+position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%); /*move o elemento, semelhante ao position*/
