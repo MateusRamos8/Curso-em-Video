@@ -36,6 +36,17 @@ position: absolute;
             transform: translate(-50%,-50%); /*move o elemento, semelhante ao position*/
 
 -C20 Projeto Cordel
+font-variant: small-caps;
+    /*text-transform: uppercase*/
+white-space: ;
+
+
+
+
+
+
+
+
 
 
 
