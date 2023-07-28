@@ -84,7 +84,7 @@ section.imagem{
 
 section.imagem pre{
     background-color: rgba(0, 0, 0, 0.425)    ;
-    width: 500px;
+    max-width: 400px;
     display: inline-block;
     padding: 5px;
     text-shadow: 3px 3px 3px black;
