@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    
     <header>
         <h1>Cordel Moderno</h1>
         <p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank">Milton Duarte</a></p>
@@ -103,5 +103,10 @@
             Site criado por Mateus Ramos para o curso do Curso em Video.
         </p>
     </footer>
+    <script>
+        document.addEventListener("scroll", function(){
+            document.querySelector("body").style.backgroundPosition = '0 '+window.pageYOffset+'px';
+         });
+    </script>
 </body>
 </html>
