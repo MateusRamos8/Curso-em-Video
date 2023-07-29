@@ -46,6 +46,9 @@ Não pode usar pra layout.
 vertical-align: top ; middle; bottom (propriedade do td)
 <th scope="col">Estados</th> define o titulo da coluna (scope="col")
 <th scope="row">Estados</th> define o titulo da linha(scope="row")
+scope="colgroup/rowgroup" quando usar colspan/rowspan
+
+SEMPRE que usar <th> definir scope
 
 tr:nth-child(2n){
     background-color: red
@@ -54,7 +57,23 @@ tr:nth-child(2n){
 ou odd pra impar e even pra par. Caso defina odd, todos os td que forem impares em
 relação ao num de sua sequencia vai ficar red. 
 
+colspan/rowspan para aumentar o número de colunas/rows ocupadas por uma celula.
 
+table{
+            border-collapse: collapse;
+        }
+pra colapsar as bordas
+
+<colgroup> ai coloca classe nas colunas
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+</colgroup>
+
+Para colocar rolagem dentro da tabela:
+overflow-x: auto (overflow-> configura coisas que vazam da tela)
 
 <table>
 <caption></caption>  titulo
