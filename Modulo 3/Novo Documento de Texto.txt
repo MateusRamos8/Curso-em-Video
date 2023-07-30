@@ -94,6 +94,34 @@ overflow-x: auto (overflow-> configura coisas que vazam da tela)
     </tfoot>
 </table>
 
+-C22 iframe
+<iframe scr="" frameborder="">mensagem alternativa</iframe>
+incorporar videos, mapas(google e weeze), google documents
+
+iframes causa problema de indexação em mecanismos de busca
+problemas de segurança, caso use um site perigoso no iframe seu site tbm se torna
+
+sandbox="sandbox" referrerpolicy="no-referer" para segurança
+referrerpolicy n deixa captar informações e sandbox n deixa açoes acontecerem
+sandbox="allow-same-origin allow-forms allow-scripts" 
+
+Tamanho padrão-> 300x150
+        scolling="" 
+        auto: coloca barra de rolagem se precisar
+        yes: sempre coloca a barra de rolagem
+        no: não coloca a barra(mas depende do navegador)
+        frameborder=""
+        0: sem borda
+        1, 2, 3...: borda de 1px
+
+para fazer um link abrir no iframe:
+<a href="" target="nome"></a>
+<iframe src="" name="nome"></iframe>
+
+srcdoc="<h1>Olá!</h1>" Substitui o src="" e permite exibir um codigo html
+
+Quadro em linha(inline frame)
+tem sites com proteção
 
 
 
