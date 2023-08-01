@@ -123,6 +123,58 @@ srcdoc="<h1>Olá!</h1>" Substitui o src="" e permite exibir um codigo html
 Quadro em linha(inline frame)
 tem sites com proteção
 
+-C23 Projeto
+transition: transform 0.25s, border 0.25s;
+box-sizing: border-box
+
+-C24 Forms
+tudo dentro do <form>
+<form autocomplete=""> pode ser: "on" ou "off". 
+<form action=""> valor é um arquivo: "arquivo.php" ou de outra linguagem
+<form method=""> pode ser: "get" ou "post"
+"get" envia so 3000 bytes
+"post" não deixa as info na URL, mas ainda aparece la em network no devtools
+aprender HTTPS pra segurança
+
+<input id="" name=""> deve possuir id(pra linkar com JS) e name(para linkar com html/php)
+<input type=""> define o tipo de input. text; submit; reset; month; date; time;
+email; tel; checkbox; radio
+<input required> torna o campo obrigatorio
+<input size="10"> define quantas letras o campo irá abrigar(10)
+<input minlength="" maxlength=""> define quantas letras o usuario pode/deve digitar
+<input autocomplete="username"> define que tipo de autocomplete o navegador deve
+indicar(username)
+<input placeholder=""> exibe um texto dentro do campo.
+<input value=""> define o valor pre-preenchido (retira o placeholder)
+<input pattern=""> VER RegEx
+<input type="radio" name="" id="" checked> ja aparece marcado
+
+<input type="number" name="" id="" min="0" max="10" step="0.5">
+min e max para type="number"; step indica de quanto em quanto o numero crece
+
+names iguais em vários input type="radio" não permitem que sejam marcados simultaneamente.
+
+<label for="id"> 'etiqueta' para o input. for="" deve ser igual ao id do input
+
+<fieldset>Agrupa os input/label
+    <legend></legend>
+</fieldset>
+
+
+
+
+<form action="" method="pst">
+        <fieldset>
+            <legend></legend>
+            <label for=""></label>
+            <input type="" name="" id="" required size="" placeholder="" autocomplete=""><br>
+            <label for="isenha"> </label>
+            <input type="" name="" id="" required minlength="" maxlength="" autocomplete=""><br>
+            <input type="" value="">
+            <input type="" value="">
+        </fieldset>
+</form>
+
 
 
 
