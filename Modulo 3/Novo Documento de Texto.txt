@@ -131,14 +131,15 @@ box-sizing: border-box
 tudo dentro do <form>
 <form autocomplete=""> pode ser: "on" ou "off". 
 <form action=""> valor é um arquivo: "arquivo.php" ou de outra linguagem
-<form method=""> pode ser: "get" ou "post"
+<form method=""> pode ser: "get"(max 3000 bytes) ou "post"
 "get" envia so 3000 bytes
 "post" não deixa as info na URL, mas ainda aparece la em network no devtools
 aprender HTTPS pra segurança
 
 <input id="" name=""> deve possuir id(pra linkar com JS) e name(para linkar com html/php)
 <input type=""> define o tipo de input. text; submit; reset; month; date; time;
-email; tel; checkbox; radio
+email; tel; checkbox; radio; color(muda a cor com value); range(usa min e max);
+file(tem q ser method post)
 <input required> torna o campo obrigatorio
 <input size="10"> define quantas letras o campo irá abrigar(10)
 <input minlength="" maxlength=""> define quantas letras o usuario pode/deve digitar
@@ -160,6 +161,42 @@ names iguais em vários input type="radio" não permitem que sejam marcados simu
     <legend></legend>
 </fieldset>
 
+<select name="" id="">
+    <option value="" selected>---Escolha---</option>
+    <optgroup label="">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+    </optgroup>
+
+    <optgroup label="">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+    </optgroup>
+</select>
+
+<input type="text" name="" id="" list="lista">
+<datalist id="lista">
+    <option value="op1">Opção 1</option>
+    <option value="op2">Opção 2</option>
+    <option value="op3">Opção 3</option>
+</datalist>
+
+<textarea name="" id="" cols="" rows=""></textarea>
+
+<form action="arquivo.php" method="post">
+        <label for="n1">Número 1:</label>
+        <input type="number" name="n1" id="n1" min="0" max="50" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)"><br>
+        <label for="n2">Número 2:</label>
+        <input type="number" name="n2" id="n2" min="0" max="50" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)"><br>
+
+        <label for="soma">Soma: </label>
+        <output name="soma" id="soma"></output><br> <!--não é enviado-->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="limpar">
+      </form>
+
 
 
 
@@ -175,7 +212,36 @@ names iguais em vários input type="radio" não permitem que sejam marcados simu
         </fieldset>
 </form>
 
+-C25 Media Query = Media type + Media Feature
 
+Media Type:
+<link rel="stylesheet" href="" media=""> pode ser all; screen; print;
+Media Feature:
+media="screen and (orientation: landscape)" landscape/portrait
+
+portrait = em pe
+landscape = deitado
+
+ou
+
+@media  screen and (orientation: portrait) 
+@media  screen and (orientation: ladnscape)
+@media  all 
+@media screen and (min-width: 1200px) ou @media (min-width: 1200px)
+@media screen and (min-width: 992px) and (max-width: 1200px)
+
+MOBILE FIRST
+
+Typical Device BreakPoints
+Pequenas Telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px ate 992px
+Desktop:992px até 1200px
+Grandes Telas: acima de 1200px
+
+google icons
+
+Pra fazer menu que expande usasr JS e display: none
 
 
 
