@@ -245,6 +245,9 @@ Pra fazer menu que expande usasr JS e display: none
 
 -C26 Projeto
 
+transition-timing-function: ease;
+da uma suavizada
+
 
 
 
