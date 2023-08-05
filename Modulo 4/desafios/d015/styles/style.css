@@ -22,9 +22,6 @@ body, html{
     height: 100vh;
     width: 100vw;
 }
-body{
-    padding: 10px;
-}
 main{
     height: 100vh;
     width: 100vw;
@@ -54,6 +51,85 @@ section.login div.form{
     padding: 10px;
     display: block;
 }
+section.login div.form h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+section.login div.form p{
+    font-size: 0.8em;
+}
+
+
+section.login div.form div.campo{
+    display: flex;
+    align-items: center;
+    background-color: var(--lilas);
+    width: 100%;
+    border-radius: 8px;
+    height: 40px;
+    margin: 5px 0px;
+}
+div.campo span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    margin: 0px 5px;
+}
+div.campo label{
+    display: none;
+}
+div.campo input{
+    background-color: #76bdba;
+    font-size: 1em;
+    height: calc(100% - 4px);
+    border-radius: 8px;
+    border: 0px;
+    margin-right: 3px;
+    width: calc(100% - 45px);
+}
+
+
+input[type="submit"]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    background-color: var(--verde);
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px 0px;
+}
+input[type="submit"]:hover{
+    background-color: #52b9b6;
+    
+}
+form a.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    color: #397c7a;
+    border: 1px solid var(--verde);
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px 0px;
+}
+form a.botao span[class="material-symbols-outlined"]{
+    font-size: 1.2em;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+form a.botao:hover{
+    background-color: #52b9b6;
+    color: #224948;
+}
+
 
 /*
 MEDIA QUERIES
@@ -73,6 +149,7 @@ Grandes Telas: acima de 1200px
     }
     section.login{
         width: 80vw;
+        height: 300px;
         display: flex;
 
         transition: width 0.3s, height 0.3s;
@@ -94,7 +171,9 @@ Grandes Telas: acima de 1200px
     }
     section.login{
         width: 950px;
+        height: 320px;
         display: flex;
+        flex-direction: row-reverse;
 
         transition: width 0.3s, height 0.3s;
         transition-timing-function: ease;
@@ -102,9 +181,16 @@ Grandes Telas: acima de 1200px
     section.login div.image{
         width: 50%;
         height: 100%;
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 0px 20px 20px 0px;
     }
     section.login div.form{
         width: 50%;
     }
+    section.login div.form h1{
+        font-size: 2em;
+    }
+    section.login div.form p{
+        font-size: 1.1em;
+    }
+    
 }

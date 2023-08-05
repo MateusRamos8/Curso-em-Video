@@ -248,6 +248,12 @@ Pra fazer menu que expande usasr JS e display: none
 transition-timing-function: ease;
 da uma suavizada
 
+transition e transform no final sempre
+
+calc()
+
+input[type="text"]
+
 
 
 
